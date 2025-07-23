@@ -1,0 +1,138 @@
+<!-- contact.html - example HTML file -->
+ <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evently | Bog'lanish</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Evently<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Bosh Sahifa</a></li>
+          <li><a href="events.html">Tadbirlar</a></li>
+          <li><a href="about.html">Biz Haqimizda</a></li>
+          <li><a href="contact.html" class="active">Bog'lanish</a></li>
+          <li><a href="booking.html" class="btn btn-outline">Band Qilish</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/contact-bg.jpg') no-repeat center center/cover;">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Biz Bilan Bog'laning</h1>
+        <p>Har qanday savol yoki taklifingiz bo'lsa, bizga murojaat qiling</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Aloqa Ma'lumotlari</h3>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Manzil</h4>
+                <p>Toshkent shahar, Yunusobod tumani, Navoiy ko'chasi 45</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4>Telefon</h4>
+                <p>+998 71 123 45 67</p>
+                <p>+998 90 987 65 43</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Elektron Pochta</h4>
+                <p>info@evently.uz</p>
+                <p>sales@evently.uz</p>
+              </div>
+            </div>
+          </div>
+          
+          <h3 style="margin-top: 30px;">Ijtimoiy Tarmoqlar</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Xabar Yuborish</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Ismingiz</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Elektron Pochta</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Telefon Raqam</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Mavzu</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Xabar</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Xabarni Yuborish</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" style="height: 400px; background-color: #eee;">
+    <div class="container">
+      <!-- Bu joyda Google Maps xaritasi bo'lishi mumkin -->
+      <div style="text-align: center; padding: 100px 0;">
+        <h3>Bizning Joylashuvimiz</h3>
+        <p>Toshkent shahar, Yunusobod tumani, Navoiy ko'chasi 45</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

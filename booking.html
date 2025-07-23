@@ -1,0 +1,160 @@
+<!-- booking.html - example HTML file -->
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evently | Band Qilish</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Evently<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Bosh Sahifa</a></li>
+          <li><a href="events.html">Tadbirlar</a></li>
+          <li><a href="about.html">Biz Haqimizda</a></li>
+          <li><a href="contact.html">Bog'lanish</a></li>
+          <li><a href="booking.html" class="btn btn-outline active">Band Qilish</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/booking-bg.jpg') no-repeat center center/cover;">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Tadbirni Band Qilish</h1>
+        <p>O'zingizga yoqqan tadbirga ro'yxatdan o'ting yoki shaxsiy tadbir tashkil etish uchun ariza qoldiring</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <div class="container">
+      <div class="booking-container">
+        <div class="booking-form">
+          <h2>Band Qilish Formasi</h2>
+          <p>Quyidagi formani to'ldiring va biz siz bilan tez orada bog'lanamiz</p>
+          
+          <form>
+            <div class="form-group">
+              <label for="event-type">Tadbir Turi</label>
+              <select id="event-type" name="event-type" required>
+                <option value="">Tanlang...</option>
+                <option value="concert">Konsert</option>
+                <option value="conference">Konferensiya</option>
+                <option value="wedding">To'y</option>
+                <option value="corporate">Korporativ Tadbir</option>
+                <option value="other">Boshqa</option>
+              </select>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ismingiz</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Telefon Raqam</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Elektron Pochta</label>
+                <input type="email" id="email" name="email">
+              </div>
+              
+              <div class="form-group">
+                <label for="date">Tadbir Sanasi</label>
+                <input type="date" id="date" name="date">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="attendees">Ishtirokchilar Soni</label>
+              <input type="number" id="attendees" name="attendees" min="1">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Qo'shimcha Izohlar</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label class="checkbox-container">Men <a href="#">shartlar va qoidalar</a> bilan tanishdim va roziman
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Arizani Yuborish</button>
+          </form>
+        </div>
+        
+        <div class="booking-info">
+          <h3>Band Qilish Jarayoni</h3>
+          <div class="process-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Formani To'ldiring</h4>
+                <p>Yuqoridagi formani to'ldiring va arizangizni yuboring</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Biz Siz Bilan Bog'lanamiz</h4>
+                <p>Biz siz bilan 24 soat ichida bog'lanib, barcha tafsilotlarni muhokama qilamiz</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>To'lovni Amalga Oshiring</h4>
+                <p>Shartnoma imzolangandan so'ng, to'lovni amalga oshiring</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Tadbirga Tayyorlaning</h4>
+                <p>Biz hamma narsani tashkil qilamiz, siz esa faqat tadbirdan rohatlaning</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="booking-benefits">
+            <h3 style="margin-top: 30px;">Bizning Afzalliklarimiz</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Professional tadbir tashkilotchilari</li>
+              <li><i class="fas fa-check-circle"></i> Har bir tadbir uchun individual yondashuv</li>
+              <li><i class="fas fa-check-circle"></i> Yuqori sifatli jihozlar va texnika</li>
+              <li><i class="fas fa-check-circle"></i> Qulay to'lov shartlari</li>
+              <li><i class="fas fa-check-circle"></i> 24/7 mijozlarga xizmat ko'rsatish</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
